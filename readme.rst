@@ -23,3 +23,5 @@ define('CDN', "http://127.0.0.1/web/GitHub/DISCOGRAFICA/CDN");
 5- En la carpeta CDN tenemos la subcarpeta \assets con todo el contenido CSS, IMG, JavaScrip. Por ello como indico en el punto anterior hemos definido una constante para poder hacer ferencia a esa carpeta de contenido.
 En la landingpage.php dentro de la carpeta (View) hacemos esa llamada tipo :
 	<?php echo CDN;?>/assets/ ……..
+
+La base de datos a instalar (discografica.sql)
