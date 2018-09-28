@@ -6,25 +6,21 @@ class Welcome extends CI_Controller {
 	
 	public function index()
 	{
-		// $this->load->view('welcome_message');
 		
-		// ARTISTAS
-		// Cargo el Modelo m_Artistas
-		//$this->load->model("m_Artistas", "artistas");
-	      //  $artis["artis"]=$this->artistas->listar_artistas();
-    
-			// Cargo la vista vista_Artistas
-      //  $html = $this->load->view("artistas/vista_artistas", $artis, true);  
+		// Por defecto le cargo la vista de Artistas
+		/*	$this->load->model("m_Artistas", "artistas");
+	        $artistas =$this->artistas->listar_artistas();
+	    	$html = $this->load->view("artistas/vista_artistas", array("bucle_artistas"=>$artistas), true);  
+			$this->load->view('landingpage', array("contenido"=>$html)  ); 
+		*/
 
+			$html = $this->load->view("admin/vista_registro_artista", null, true);
+			$this->load->view('landingpage', array("contenido"=>$html)  );
 
-		// LPS
-		// Cargo el modelo m_LPS
-		// $this->load->model("m_LPS", "lps");
-      //  $lp["lp"]=$this->lps->listar_lps();
-
-			// Cargo la vista vista_lps
-      //  $html = $this->load->view("lps/vista_lps", $lp, true);
-
+			//$html = $this->load->view("admin/vista_registro_lp", null, true);
+			//$this->load->view('landingpage', array("contenido"=>$html)  );
+		
+		
 
 
 	}

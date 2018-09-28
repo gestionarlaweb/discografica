@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 26-09-2018 a las 23:34:43
+-- Tiempo de generación: 28-09-2018 a las 09:17:16
 -- Versión del servidor: 10.1.32-MariaDB
 -- Versión de PHP: 7.2.5
 
@@ -71,28 +71,6 @@ INSERT INTO `lp` (`id`, `id_artista`, `nombre`, `descripcion`) VALUES
 (5, 4, 'The Wiz', 'En el año 1975 la obra obtuvo un total de siete Premios Tony incluyendo Mejor Musical'),
 (6, 4, 'Moonwalker', 'Moonwalker, también conocida como Michael Jackson: Moonwalker, es una película del género de antología musical del artista estadounidense Michael Jackson, lanzada en octubre de 1988.');
 
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `ong`
---
-
-CREATE TABLE `ong` (
-  `ID` int(10) NOT NULL,
-  `nombre` varchar(100) NOT NULL,
-  `tipo` varchar(100) NOT NULL,
-  `description` varchar(100) NOT NULL,
-  `img` varchar(100) NOT NULL,
-  `cuenta` varchar(24) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Volcado de datos para la tabla `ong`
---
-
-INSERT INTO `ong` (`ID`, `nombre`, `tipo`, `description`, `img`, `cuenta`) VALUES
-(1, 'AECC', 'AECC', 'Asociacion Española contra el cancer', '', '');
-
 --
 -- Índices para tablas volcadas
 --
@@ -110,12 +88,6 @@ ALTER TABLE `lp`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `ong`
---
-ALTER TABLE `ong`
-  ADD PRIMARY KEY (`ID`);
-
---
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
@@ -130,12 +102,6 @@ ALTER TABLE `artistas`
 --
 ALTER TABLE `lp`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
---
--- AUTO_INCREMENT de la tabla `ong`
---
-ALTER TABLE `ong`
-  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

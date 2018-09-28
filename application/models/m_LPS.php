@@ -6,10 +6,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 # LISTAR USUARIOS
 		function listar_lps(){
 			$tmp = $this->db
-			->select("id_artista, nombre, descripcion")
+			->select("id, id_artista, nombre, descripcion")
 			->get("lp");
 
 		return $tmp->result_array(); // devuelve resultados múltiples (por lo general, para usar en un bucle).
+		}
+
+		function recuperar_lps_artista(){
+
+			$tmp = $this->db
+			->select("id, id_artista, nombre, descripcion")
+			->get("lp");
+		return $tmp->result_array(); // devuelve un solo resultado.
+		
 		}
 	}
 ?>

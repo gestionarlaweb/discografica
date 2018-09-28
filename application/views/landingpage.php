@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="<?php echo CDN;?>/assets/css/aurora-pack.min.css">
     <link rel="stylesheet" href="<?php echo CDN;?>/assets/css/aurora-theme-base.min.css">
     <link rel="stylesheet" href="<?php echo CDN;?>/assets/css/urku.css">
+    <link rel="stylesheet" href="<?php echo CDN;?>/assets/css/animate.css">
   </head>
   <body class="top-fixed">
     <header class="ae-container-fluid ae-container-fluid--full rk-header ">
@@ -33,13 +34,18 @@
         <h1 class="rk-logo"><a href="artistas">Todo música<sup>tm</sup></a></h1>
         <nav class="rk-navigation">
           <ul class="rk-menu">
-            <li class="rk-menu__item"><a href="artistas" class="rk-menu__link">Inicio</a>
+            <li class="rk-menu__item"><a href="" class="rk-menu__link">Inicio</a>
             </li>
-            <li class="rk-menu__item"><a href="artistas" class="rk-menu__link">Administrar</a>
+            <li class="rk-menu__item"><a href="" class="rk-menu__link">Administrar</a>
               <nav class="rk-menu__sub">
                 <ul class="rk-container">
-                  <li class="rk-menu__item"><a href="artistas" class="rk-menu__link">Artistas</a></li>
-                  <li class="rk-menu__item"><a href="artistas" class="rk-menu__link">LP's</a></li>
+                  <li class="rk-menu__item">
+                    <a href="<?php echo base_url('cont_Registro/registrar_artista');?> "class="rk-menu__link">Artistas</a>
+                     
+                  </li>
+                  <li class="rk-menu__item">
+                    <a href="<?php echo base_url('cont_Registro/registrar_lp');?>" class="rk-menu__link">LP's</a>
+                  </li>
                 </ul>
               </nav>
             </li>
@@ -48,31 +54,12 @@
       </div>
     </header>
 
-    
-   
-     
-      
       <section class="ae-container-fluid ae-container-fluid--inner rk-blog">
         <div class="rk-blog__items">
           <div class="rk-blog__item">
-            <div class="post-img post-1 rk-landscape-alt rk-tosquare">
-              <div class="item-meta">
-                <p><a href="artistas" class="arrow-button">Últimos LP's<span class="arrow-cont">
-                      <svg>
-                        <use xlink:href="<?php echo CDN;?>/assets/img/symbols.svg#arrow"></use>
-                      </svg></span></a></p>
-              </div>
-            </div>
-            <div class="blog-info">
-              <h2 class="blog-info__title"> <a href="artistas">Los mejores artistas aquí !</a></h2>
-              <h5 class="blog-info__author">Todo <a href="artistas" class="ae-u-bolder">música !</a></h5>
-              <p class="blog-info__excerpt">Facilitamos a los grupos noveles todos los mecanismos para que sus discos y sus canciones encuentren un lugar en el mercado actual, donde los nuevos instrumentos de creación y difusión han dado un giro radical a la industria de la música.
-              También damos servicios de consultoría, management, editorial, prensa y estrategias de marketing, para contribuir, junto con la creación de un producto de calidad, al lanzamiento de los nuevos artistas</p>
-            </div>
-            <div class="blog-meta"><a href="artistas" class="ae-u-bolder blog-meta__comments">3 LP's añadidos</a><span class="ae-kappa ae-u-bold blog-meta__date">Octubre, 1 2018</span><a href="artistas" class="arrow-button blog-meta__read-more">Ver más<span class="arrow-cont">
-                  <svg>
-                    <use xlink:href="<?php echo CDN;?>/assets/img/symbols.svg#arrow"></use>
-                  </svg></span></a></div>
+            
+             <!-- esta parte solo quiero que se cargue cuando vaya a la página de Artistas -->
+         
           </div>     
         </div>
       </section>
