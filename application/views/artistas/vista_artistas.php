@@ -3,10 +3,14 @@
           <div class="rk-blog__item">
             <div class="post-img post-1 rk-landscape-alt rk-tosquare">
               <div class="item-meta">
-                <p><a href="<?php echo base_url('cont_Lps/lps');?>" class="arrow-button">Últimos LP's<span class="arrow-cont">
+                  <p><a href="<?php base_url("index.php/cont_Lps/lps/")?>" class="arrow-button">Últimos LP's
+                    <span class="arrow-cont">
                       <svg>
                         <use xlink:href="<?php echo CDN;?>/assets/img/symbols.svg#arrow"></use>
-                      </svg></span></a></p>
+                      </svg>
+                   </span>
+                  </a>
+                </p>
               </div>
             </div>
             <div class="blog-info">
@@ -41,8 +45,11 @@
                 <?php
                                 // ($proyectos) definido en el controlador del Proyectos dentro de la función listar()
                 // <a href="'.base_url("cont_Lps/recuperar_uno").'"> 
-                 foreach ($bucle_artistas as $bucle) {            
 
+                 $num_lp = 1;
+                 foreach ($bucle_artistas as $bucle) {
+
+                
                 echo '
                        <tbody>
                           <tr>
@@ -53,13 +60,14 @@
                               <button class="btn btn-outline-info btn-sm">LPs</button> 
                               </a>
                             </td>
-                            <td>2</td>
+                            <td>'.$num_lp.'</td> 
                           </tr>
                         </tbody>      
                       ';
+
                      }
                 ?>
-             </table>
+             </table>  <!-- // aquí en $num_lp debe contar los lps que tiene el artista -->
         </div>
     </div>  
 </div>

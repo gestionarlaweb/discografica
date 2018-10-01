@@ -13,12 +13,32 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		}
 
 		function recuperar_lps_artista(){
-
+	  //function recuperar_lps_artista($id_artista)
+			
 			$tmp = $this->db
 			->select("id, id_artista, nombre, descripcion")
+
+			
+
+			->WHERE ('id_artista','$id')
+
+			
+			//	SELECT artistas.id, lp.nombre, lp.descripcion FROM artistas
+			//	INNER JOIN lp
+			//	ON lp.id_artista=artistas.id;
+			 
+			
 			->get("lp");
+			
 		return $tmp->result_array(); // devuelve un solo resultado.
 		
 		}
 	}
+
+/*
+
+*/
+
 ?>
+
+

@@ -13,11 +13,13 @@ class Welcome extends CI_Controller {
 	    	$html = $this->load->view("artistas/vista_artistas", array("bucle_artistas"=>$artistas), true);  
 			$this->load->view('landingpage', array("contenido"=>$html)  ); 
 		*/
+			$this->load->model("m_Artistas", "artistas");
+        $artistas =$this->artistas->listar_artistas();
+     
+		$html = $this->load->view("artistas/vista_artistas", array("bucle_artistas"=>$artistas), true); 
+		$this->load->view('landingpage', array("contenido"=>$html)  ); 
 
-			$html = $this->load->view("admin/vista_registro_artista", null, true);
-			$this->load->view('landingpage', array("contenido"=>$html)  );
-
-			//$html = $this->load->view("admin/vista_registro_lp", null, true);
+			//$html = $this->load->view("admin/vista_registro_artista", null, true);
 			//$this->load->view('landingpage', array("contenido"=>$html)  );
 		
 		

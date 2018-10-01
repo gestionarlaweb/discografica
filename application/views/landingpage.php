@@ -34,17 +34,17 @@
         <h1 class="rk-logo"><a href="artistas">Todo música<sup>tm</sup></a></h1>
         <nav class="rk-navigation">
           <ul class="rk-menu">
-            <li class="rk-menu__item"><a href="" class="rk-menu__link">Inicio</a>
+            <li class="rk-menu__item"><a href="<?php echo base_url("/index.php/cont_Artistas/artistas");?>" class="rk-menu__link">Inicio</a>
             </li>
             <li class="rk-menu__item"><a href="" class="rk-menu__link">Administrar</a>
               <nav class="rk-menu__sub">
                 <ul class="rk-container">
                   <li class="rk-menu__item">
-                    <a href="<?php echo base_url('cont_Registro/registrar_artista');?> "class="rk-menu__link">Artistas</a>
+                    <a href="<?php echo base_url("cont_Registro/registrar_artista");?> "class="rk-menu__link">Artistas</a>
                      
                   </li>
                   <li class="rk-menu__item">
-                    <a href="<?php echo base_url('cont_Registro/registrar_lp');?>" class="rk-menu__link">LP's</a>
+                    <a href="<?php echo base_url("cont_Registro/registrar_lp");?>" class="rk-menu__link">LP's</a>
                   </li>
                 </ul>
               </nav>
@@ -87,9 +87,9 @@
           <ul class="rk-menu rk-footer-menu">
             <li class="rk-menu__item"><a href="artistas" class="rk-menu__link">About</a>
             </li>
-            <li class="rk-menu__item"><a href="artistas" class="rk-menu__link">Docs</a>
-            </li>
-            <li class="rk-menu__item"><a href="artistas" class="rk-menu__link">Contact</a>
+            
+            <li class="rk-menu__item">
+              <a class="rk-menu__link" ><?php echo mailto ( ' gestionarlaweb@gmail.com ' ,  'Contactar' ); ?> </a>
             </li>
           </ul>
           <p class="rk-footer__text rk-footer__copy "> <span class="ae-u-bold">© </span><span class="ae-u-bolder">2018 Gestionarlaweb </span>All Right Reserved.</p>
@@ -98,7 +98,12 @@
             
         </div>
         <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-right">
-          <p class="rk-footer__text rk-footer__contact "> <span class="ae-u-bold">Email: </span><span class="ae-u-bolder"> <a href="#0" class="rk-dark-color ">gestionarlaweb@gmail.com </a></span></p>
+          <p class="rk-footer__text rk-footer__contact "> 
+            <span class="ae-u-bold">Email: </span>
+            <span class="ae-u-bolder"> 
+              <a href="" class="rk-dark-color ">gestionarlaweb@gmail.com </a>
+            </span>
+          </p>
           <p class="rk-footer__text rk-footer__by">Creado por <a href="http://gestionarlaweb.com" class="ae-u-bolder">gestionarlaweb.com</a></p>
         </div>
       </div>
