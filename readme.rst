@@ -24,6 +24,26 @@ define('CDN', "http://127.0.0.1/web/GitHub/DISCOGRAFICA/CDN");
 En la landingpage.php dentro de la carpeta (View) hacemos esa llamada tipo :
 	<?php echo CDN;?>/assets/ ……..
 
+6- Añadido de JScript en ( vista_registro_lp-php )para obligar a introducir un nombre de artista en el formulario de nuevo LP:
+
+  <script>
+  function displayArtista() {
+
+         var selectElem = document.getElementById('id_artista')
+         var resultado = selectElem.value;
+         
+         var e = document.getElementById("id_nombre");
+
+         if (  resultado != 0 ){
+           console.log("hay algo, activa el menú"); 
+          e.removeAttribute("disabled");   
+          }else{
+           console.log("no hay nada, sigue sin activar el menú");
+           e.setAttribute('disabled','disabled');
+          }
+  }
+  </script> 
+
 
 La base de datos a instalar (discografica.sql) se encuentra en este repositorio.
 

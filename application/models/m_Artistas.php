@@ -16,7 +16,5 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		return $tmp->result_array(); // devuelve resultados múltiples (por lo general, para usar en un bucle).
 		}
 
-	
-
 	}
 ?>

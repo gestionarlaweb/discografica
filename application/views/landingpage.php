@@ -40,11 +40,13 @@
               <nav class="rk-menu__sub">
                 <ul class="rk-container">
                   <li class="rk-menu__item">
-                    <a href="<?php echo base_url("cont_Registro/registrar_artista");?> "class="rk-menu__link">Artistas</a>
-                     
+                    <a href="<?php echo base_url("/index.php/cont_Registro/registrar_artista");?> " 
+                      class="rk-menu__link">Artistas</a>   
+                    </li>
                   </li>
                   <li class="rk-menu__item">
-                    <a href="<?php echo base_url("cont_Registro/registrar_lp");?>" class="rk-menu__link">LP's</a>
+                    <a href="<?php echo base_url("/index.php/cont_Registro/registrar_lp");?>" 
+                      class="rk-menu__link">LP's</a>
                   </li>
                 </ul>
               </nav>
