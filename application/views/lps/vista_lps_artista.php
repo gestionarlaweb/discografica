@@ -1,3 +1,13 @@
+<section class="ae-container-fluid ae-container-fluid--inner rk-blog">
+        <div class="rk-blog__items">
+          <div class="rk-blog__item">
+            <div class="post-img post-9 rk-landscape-alt rk-tosquare">
+              <div class="item-meta">
+              </div> 
+            </div>          
+          </div>     
+        </div>
+</section>
 <div class="container">   
    <div class="row">
      <h4>LP's del artista</h4>  
@@ -26,7 +36,7 @@
                           </tr>
                         </tbody>      
                       ';                      
-                     }echo '<p>Total Lps del artista en la Base de Datos : '.$contador.'</p>';
+                     }echo '<p>Total Lps del artista en la nuestra base de datos : '.$contador.'</p>';
 
                 ?>
              </table>

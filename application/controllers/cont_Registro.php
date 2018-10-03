@@ -4,9 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   class cont_Registro extends CI_Controller{
 
 
-    //http://127.0.0.1/web/GitHub/DISCOGRAFICA/index.php/cont_Registro/registrar_artista
-  
-    public function registrar_artista(){
+   public function registrar_artista(){
 
       if($this->input->post("nombre")== null){  // Si no se ha introducido el nombre
 
@@ -26,11 +24,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 
             }
                  
-      } // fin registrar_artista()
+      } 
 
 
 
-      //http://127.0.0.1/web/GitHub/DISCOGRAFICA/index.php/cont_Registro/registrar_lp
       public function registrar_lp(){
 
         if($this->input->post("lp")== null){
@@ -47,7 +44,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             );
              redirect('/index.php/cont_Artistas/artistas/');
         }
-      } // fin registrar_lp()
+      }
 
 
   } 

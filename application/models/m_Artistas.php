@@ -11,7 +11,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			->order_by("nombre", "asc")  // asc Ascendente    desc Descendente
 			->get("artistas");
 			
-		return $tmp->result_array(); // devuelve resultados múltiples (por lo general, para usar en un bucle).
+		return $tmp->result_array(); 
 		}
 
 	}

@@ -1,17 +1,10 @@
+  
   <section class="ae-container-fluid ae-container-fluid--inner rk-blog">
         <div class="rk-blog__items">
           <div class="rk-blog__item">
             <div class="post-img post-1 rk-landscape-alt rk-tosquare">
-         <!--     <div class="item-meta">
-                  <p><a href="<?php base_url("index.php/cont_Lps/lps/")?>" class="arrow-button">Últimos LP's
-                    <span class="arrow-cont">
-                      <svg>
-                        <use xlink:href="<?php echo CDN;?>/assets/img/symbols.svg#arrow"></use>
-                      </svg>
-                   </span>
-                  </a>
-                </p>
-              </div> -->
+              <div class="item-meta">
+              </div> 
             </div>
             <div class="blog-info">
               <h2 class="blog-info__title"> <a href="artistas">Los mejores artistas aquí !</a></h2>
@@ -19,10 +12,7 @@
               <p class="blog-info__excerpt">Facilitamos a los grupos noveles todos los mecanismos para que sus discos y sus canciones encuentren un lugar en el mercado actual, donde los nuevos instrumentos de creación y difusión han dado un giro radical a la industria de la música.
               También damos servicios de consultoría, management, editorial, prensa y estrategias de marketing, para contribuir, junto con la creación de un producto de calidad, al lanzamiento de los nuevos artistas</p>
             </div>
-            <div class="blog-meta"><a href="artistas" class="ae-u-bolder blog-meta__comments">3 LP's añadidos</a><span class="ae-kappa ae-u-bold blog-meta__date">Octubre, 1 2018</span><a href="artistas" class="arrow-button blog-meta__read-more">Ver más<span class="arrow-cont">
-                  <svg>
-                    <use xlink:href="<?php echo CDN;?>/assets/img/symbols.svg#arrow"></use>
-                  </svg></span></a></div>
+           
           </div>     
         </div>
       </section>
@@ -41,10 +31,9 @@
                     <th>Ver</th>
                   </tr>
                 </thead>
-                <?php
+                <?php   
                 foreach ($bucle_artistas as $bucle) {
 
-                
                 echo '
                        <tbody>
                           <tr>
@@ -59,7 +48,7 @@
                         </tbody>      
                       ';
 
-                     }
+                     } 
                 ?>
              </table>  
         </div>
