@@ -16,6 +16,7 @@ class cont_Artistas extends CI_Controller {
 	
 		$this->load->model("m_Artistas", "artistas");
         $artistas =$this->artistas->listar_artistas();
+       
      
 		$html = $this->load->view("artistas/vista_artistas", array("bucle_artistas"=>$artistas), true); 
 		$this->load->view('landingpage', array("contenido"=>$html)  ); 
