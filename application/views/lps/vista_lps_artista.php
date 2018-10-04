@@ -36,7 +36,7 @@
                           </tr>
                         </tbody>      
                       ';                      
-                     }echo '<p>Total Lps del artista en la nuestra base de datos : '.$contador.'</p>';
+                     }echo '<p>Total Lps del artista en nuestra base de datos : '.$contador.'</p>';
 
                 ?>
              </table>

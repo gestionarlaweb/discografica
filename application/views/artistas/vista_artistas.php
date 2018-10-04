@@ -23,7 +23,7 @@
    <div class="row">
         <h4>Artistas en nuestra discográfica</h4>
         <div class="col-md-12">
-            <table class="table table-striped">
+           <table class="table table-striped">
                 <thead>
                   <tr>
                     <th>Artista</th>
@@ -31,7 +31,7 @@
                     <th>Ver</th>
                   </tr>
                 </thead>
-                <?php   
+                <?php 
                 foreach ($bucle_artistas as $bucle) {
 
                 echo '
@@ -50,7 +50,8 @@
 
                      } 
                 ?>
-             </table>  
+             </table> 
+          
         </div>
     </div>  
 </div>

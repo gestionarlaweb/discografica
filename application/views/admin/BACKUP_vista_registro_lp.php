@@ -35,23 +35,28 @@ function displayArtista() {
                         <div class="form-group row col-sm-2">
                             <!-- dejo un espacio de col-sm-4 a la izquierda -->
                         </div>
-                    </div>                                    
+                    </div>
 
+
+
+                    
                     <!-- colocamos el formulario -->
                     <form action="" method="POST">
 
                         <div class="row">
                             <div class="form-group row col-sm-2">
-                                <!-- dejo un espacio de col-sm-4 a la derecha  -->   
+                                <!-- dejo un espacio de col-sm-4 a la derecha -->
                             </div>
                             <div class="form-group row">
-                                <label class="col-sm-4 col-form-label">Artista</label>
+                                <label class="col-sm-5 col-form-label">Artista</label>
                                 <div class="col-sm-8">
-                                    
                                     <select id="id_artista" name="artista" class="form-control" value_default="0" onchange="displayArtista();">
-                                        <?php foreach ($datos_recibidos->result() as $nom) : ?>
-                                            <option value="<?php echo $nom->id ?>"><?php echo $nom->nombre ?> </option>
-                                        <?php endforeach; ?> 
+
+                                        <option value="0"selected> Ninguno</option>
+                                        <option value="1">Shakira</option>
+                                        <option value="2">Bruce Springsteen</option>
+                                        <option value="3">Madonna</option>
+                                           
                                     </select>
                                 </div>
                             </div>                        
@@ -95,4 +100,3 @@ function displayArtista() {
         </div>
     </div>
 </div>
-

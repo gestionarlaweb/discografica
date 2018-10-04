@@ -27,12 +27,23 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       } 
 
 
-
       public function registrar_lp(){
 
+        $this->load->model("m_Artistas", "artistas");
+
+        $data = array(
+          'datos_recibidos' => $this->artistas->listar_nombres()
+        );
+
+          
+        $html = $this->load->view('admin/vista_registro_lp', $data, true); // null, true
+        $this->load->view('landingpage', array("contenido"=>$html) );
+
+            
         if($this->input->post("lp")== null){
-           $html = $this->load->view("admin/vista_registro_lp", null, true);
-           $this->load->view('landingpage', array("contenido"=>$html)  );
+         
+         //$this->load->view("admin/vista_registro_lp", null, true);
+           
          }
          else{
             $this->load->model("m_Admin", "admin_lps");
@@ -48,4 +59,5 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
   } 
+
 ?>
