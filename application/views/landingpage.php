@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="<?php echo CDN;?>/assets/css/aurora-theme-base.min.css">
     <link rel="stylesheet" href="<?php echo CDN;?>/assets/css/urku.css">
     <link rel="stylesheet" href="<?php echo CDN;?>/assets/css/animate.css">
+
+   
   </head>
   <body class="top-fixed">
     <header class="ae-container-fluid ae-container-fluid--full rk-header ">

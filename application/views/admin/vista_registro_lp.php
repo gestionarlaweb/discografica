@@ -1,5 +1,8 @@
-<script>
-function displayArtista() {
+
+
+<script type="text/javascript">
+    
+    function displayArtista() {
 
       var selectElem = document.getElementById('id_artista')
         var resultado = selectElem.value;
@@ -15,7 +18,7 @@ function displayArtista() {
          e.setAttribute('disabled','disabled');
         }
 }
-</script> 
+</script>
 
 <div class="col-sm-12">
     <!-- Basic Form Inputs card start -->

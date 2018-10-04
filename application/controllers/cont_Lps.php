@@ -11,16 +11,13 @@ class cont_Lps extends CI_Controller {
 	    // echo json_encode($lps);
 
 		public function lps_artista(){
-
 			
 
-			
-			
-			//$a_ver = $this->input->post('id');
-			$a_ver = 6;
+			$this->load->model("m_LPS", "lps");
 
-				$this->load->model("m_LPS", "lps");
-				$lp = $this->lps->recuperar_lps_artista($a_ver);
+			$lp = $this->lps->recuperar_lps_artista(
+				$this->input->post('$id')
+			);
 	       	
 	      
 	       	$html = $this->load->view("lps/vista_lps_artista", array("lps_artista"=>$lp), true); 
