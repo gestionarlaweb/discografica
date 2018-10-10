@@ -329,7 +329,7 @@ $config['cache_query_string'] = FALSE;
 | https://codeigniter.com/user_guide/libraries/encryption.html
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = 'clavedavid';  // Necesario poner una clave de encriptación si utilizamos la libreria 'session'
 
 /*
 |--------------------------------------------------------------------------

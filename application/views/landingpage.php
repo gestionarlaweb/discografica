@@ -16,9 +16,11 @@
     <link rel="stylesheet" href="<?php echo CDN;?>/assets/css/urku.css">
     <link rel="stylesheet" href="<?php echo CDN;?>/assets/css/animate.css">
 
+    
    
   </head>
   <body class="top-fixed">
+
     <header class="ae-container-fluid ae-container-fluid--full rk-header ">
       <input type="checkbox" id="mobile-menu" class="rk-mobile-menu">
       <label for="mobile-menu">
@@ -32,37 +34,73 @@
           <use xlink:href="<?php echo CDN;?>/assets/img/symbols.svg#bar"></use>
         </svg>
       </label>
+
+
       <div class="ae-container-fluid rk-topbar">
         <h1 class="rk-logo"><a href="artistas">Todo música<sup>tm</sup></a></h1>
         <nav class="rk-navigation">
           <ul class="rk-menu">
             <li class="rk-menu__item"><a href="<?php echo base_url("/index.php/cont_Artistas/artistas");?>" class="rk-menu__link">Inicio</a>
             </li>
-            <li class="rk-menu__item"><a href="" class="rk-menu__link">Administrar</a>
+
+            <?php if($this->session->userdata('logeado')){ ?>
+               <li class="rk-menu__item"><a href="<?php echo base_url("/index.php/cont_Login/logout");?>" class="rk-menu__link">Cierra sesión</a>
+              </li>
+              <?php }else{ ?>          
+
+  
+            <li class="rk-menu__item"><a href="<?php echo base_url("/index.php/cont_Login/logeado");?>" class="rk-menu__link">Login</a>
               <nav class="rk-menu__sub">
                 <ul class="rk-container">
-                  <li class="rk-menu__item">
-                    <a href="<?php echo base_url("/index.php/cont_Registro/registrar_artista");?> " 
-                      class="rk-menu__link">Artistas</a>   
-                    </li>
-                  </li>
-                  <li class="rk-menu__item">
-                    <a href="<?php echo base_url("/index.php/cont_Registro/registrar_lp");?>" 
-                      class="rk-menu__link">LP's</a>
-                  </li>
+                  
+                    
+                  <!-- LOGEARSE -->
+                    <div class="col-md-4 text-center">
+                        <form action="<?php echo base_url("/index.php/cont_Login/logeado/")?>" method="post">
+                          <div class="form-group has-feedback">
+                            <input type="email"  name="email" class="form-control" placeholder="Email">
+                           
+                          </div>
+                          <div class="form-group has-feedback">
+                            <input type="password" name="password" class="form-control" placeholder="Password">
+                            
+                          </div>
+                          <div class="row">
+                            <!-- /.col -->
+                            <div class="col-xs-4">
+                           
+                              <button type="submit" class="btn btn-primary">Logearse</button> 
+                            </div>
+                            <!-- /.col -->
+                          </div>
+                        </form>
+                    </div>
+                 
+                 
                 </ul>
               </nav>
             </li>
+
+          <?php } ?>
+    
+ 
+
+
           </ul>
         </nav>
-      </div>
-    </header>
+      </div> 
+ </header>
+
+
+    
+
+
 
       <section class="ae-container-fluid ae-container-fluid--inner rk-blog">
         <div class="rk-blog__items">
           <div class="rk-blog__item">
             
-             <!-- esta parte solo quiero que se cargue cuando vaya a la página de Artistas -->
+             <!-- esta parte solo quiero que se cargue cuando vaya a la página de Artistas -->                 
          
           </div>     
         </div>

@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   class cont_Registro extends CI_Controller{
 
 
-   public function registrar_artista(){
+    public function registrar_artista(){
 
       if($this->input->post("nombre")== null){  // Si no se ha introducido el nombre
 
@@ -29,6 +29,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
       public function registrar_lp(){
 
+     
         $this->load->model("m_Artistas", "artistas");
 
         $data = array(

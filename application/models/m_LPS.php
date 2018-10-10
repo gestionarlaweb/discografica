@@ -13,8 +13,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		
 		return $tmp->result_array(); 
 		
-		}
-		
+		}		
 	}
 
 ?>

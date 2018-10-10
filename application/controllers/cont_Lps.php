@@ -10,21 +10,18 @@ class cont_Lps extends CI_Controller {
         // $lps = $this->lps->recuperar_lps_artista();
 	    // echo json_encode($lps);
 
-		public function lps_artista(){
-			
+		
+
+		public function lps_artista($id){
 
 			$this->load->model("m_LPS", "lps");
-
-			$lp = $this->lps->recuperar_lps_artista(
-				$this->input->post('$id')
-			);
-	       	
-	      
+			
+			$lp = $this->lps->recuperar_lps_artista($id);     	
+		      
 	       	$html = $this->load->view("lps/vista_lps_artista", array("lps_artista"=>$lp), true); 
 	      	$this->load->view('landingpage', array("contenido"=>$html)  );
+		} 
 
-		}
-
-
+	
 	}
 ?>

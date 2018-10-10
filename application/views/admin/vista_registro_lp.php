@@ -1,7 +1,4 @@
-
-
-<script type="text/javascript">
-    
+<script>
     function displayArtista() {
 
       var selectElem = document.getElementById('id_artista')
@@ -30,11 +27,21 @@
                         <div class="form-group row col-sm-2">
                             <!-- dejo un espacio de col-sm-4 a la derecha -->
                         </div>
-                        <div class="form-group row col-sm-6">
+                        <div class="form-group row col-sm-3">
                             <h6 class="sub-title text-left text-info"
                                 style="-webkit-text-decoration-line: underline; /* Safari */
                                     text-decoration-line: underline">Nuevo registro de LP</h6>
                         </div>
+                        <div class="form-group row col-sm-3">
+                            <h6 class="sub-title text-left text-info"
+                                style="-webkit-text-decoration-line: underline; /* Safari */
+                                    text-decoration-line: underline">
+                                    <a href="<?php echo base_url("/index.php/cont_Registro/registrar_artista");?> ">Regitrar nuevo Artista</a>
+                            </h6>
+                        </div>
+
+                        
+
                         <div class="form-group row col-sm-2">
                             <!-- dejo un espacio de col-sm-4 a la izquierda -->
                         </div>
